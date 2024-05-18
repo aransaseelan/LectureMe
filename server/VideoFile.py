@@ -7,10 +7,10 @@ from tkinter import filedialog
 
 print("We are now going to download the video from the link you provided")
 
-def get_link():
+def get_link(youtube_link):
     root = tk.Tk()
     root.withdraw()
-    youtubeLink = input("Please enter the link of the video you would like to upload: ")
+    # youtubeLink = input("Please enter the link of the video you would like to upload: ")
     resolution = input("Please enter the resolution you would like to download the video in: (360p, 720p, 1080p)")
     itag = choose_resolution(resolution)
     save_dir = open_file_dialog()
@@ -18,7 +18,8 @@ def get_link():
         print("Started download...")
         print("Invalid save location.")
     else:
-        download_video(youtubeLink, itag, save_dir)
+        # download_video(youtubeLink, itag, save_dir) 
+        download_video(youtube_link, itag, save_dir)
 
 def open_file_dialog():
     folder = filedialog.askdirectory()
