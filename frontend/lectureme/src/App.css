@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: radial-gradient(50% 50% at 50% 50%, #582ABA 0%, #000E29 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+}
+
+#main-text, #log-in {
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  top: 4vh;
+  left: 6vw;
+  position: relative;
+  color: white;
+}
+
+#log-in {
+  left: 56vw;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#get-started {
+  position: relative;
+  width: 185px;
+  height: 57px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #38A0FF 0%, #8800F3 100%);
+  left: 62vw;
+  top: 2.5vh;
+  line-height: 57px;
+  font-weight: 800;
+}
+
+#hero {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  top: 12vh;
+  overflow: scroll;
+}
+
+#hero::-webkit-scrollbar {
+  display: none;
+}
+
+#hero-text {
+  width: 100%;
+  position: relative;
+  top: 10vh;
+  font-size: 72px;
+}
+
+#gradient-text {
+  background: linear-gradient(101deg, #38A0FF 42.03%, #8800F3 88.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#glass-cover {
+  width: 90%;
+  height: 80vh;
+  position: relative;
+  top: 20vh;
+  left: 10vh;
+  border-radius: 22px;
+  opacity: 0.5;
+  background: rgba(217, 217, 217, 0.30);
+  mix-blend-mode: color-dodge;
+  display: flex;
+  flex-direction: row;
+}
