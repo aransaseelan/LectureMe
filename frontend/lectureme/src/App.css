@@ -87,7 +87,8 @@
   width: 100vw;
   height: 90vh;
   top: 12vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #hero::-webkit-scrollbar {
@@ -124,4 +125,73 @@
   mix-blend-mode: color-dodge;
   display: flex;
   flex-direction: row;
+}
+
+#tv-pic {
+  width: 20%;
+  height: 50%;
+  opacity: 100%;
+  position: relative;
+  top: -50vh;
+  left: 10vw;
+  transform: scale(1);
+  transition: all 250ms ease;
+}
+
+#tv-pic:hover, #gba-pic:hover, #orb-pic:hover {
+  transform: scale(1.25);
+  transition: all 250ms ease;
+}
+
+#gba-pic {
+  width: 20%;
+  height: 50%;
+  opacity: 100%;
+  position: relative;
+  top: -115vh;
+  left: 70vw;
+  transform: scale(1);
+  transition: all 250ms ease;
+}
+
+#orb-pic {
+  width: 15%;
+  height: 27%;
+  opacity: 100%;
+  position: relative;
+  top: -80vh;
+  left: 45vw;
+  transform: scale(1);
+  transition: all 250ms ease;
+}
+
+#test {
+  color: white;
+  position: relative;
+  top: -110vh;
+  left: -29vw;
+  font-size: 40px;
+}
+
+#test2 {
+  position: relative;
+  top: -110vh;
+  left: 2vw;
+  font-size: 40px;
+}
+
+#test3 {
+  position: relative;
+  top: -110vh;
+  left: 30vw;
+  font-size: 40px;
+}
+
+#video-enter {
+  background: blue;
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  left: 10vw;
+  top: -60vh;
 }
