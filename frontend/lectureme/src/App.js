@@ -14,7 +14,7 @@ function App() {
         <div id="header">
           <h1 id="main-text">LectureMe</h1>
           <h1 id="log-in">log in</h1>
-          <div id="get-started" onClick={() => startRef.current.scrollIntoView()}>
+          <div id="get-started" onClick={() => startRef.current.scrollIntoView({behavior: 'smooth'})}>
             get started
           </div>
         </div>

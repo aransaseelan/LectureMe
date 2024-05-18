@@ -102,6 +102,11 @@
   font-size: 72px;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 #gradient-text {
   background: linear-gradient(101deg, #38A0FF 42.03%, #8800F3 88.25%);
   background-clip: text;
