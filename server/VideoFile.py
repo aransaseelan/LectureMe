@@ -5,9 +5,8 @@ import pytube
 import tkinter as tk
 from tkinter import filedialog
 
-print("We are now going to download the video from the link you provided")
-
 def get_link():
+    print("We are now going to download the video from the link you provided")
     root = tk.Tk()
     root.withdraw()
     youtubeLink = input("Please enter the link of the video you would like to upload: ")

@@ -2,8 +2,8 @@ from youtube_transcript_api import YouTubeTranscriptApi
 import re
 
 # Uncomment below for testing purposes
-def main():
-    videoTranscript('https://www.youtube.com/watch?v=HCOQmKTFzYY&t=51s')
+# def main():
+#     videoTranscript('https://www.youtube.com/watch?v=HCOQmKTFzYY&t=51s')
 
 def videoTranscript(youtube_link):
     # Get the transcript of the video
@@ -28,5 +28,5 @@ def extract_video_id(url):
         return None
 
 # Uncomment below for testing purposes
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
