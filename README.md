@@ -36,7 +36,7 @@ LectureMe is a project that aims to make the lectures more engaging and understa
 
 LectureMe is a multi-component application built with a combination of technologies. The frontend is developed using React, which is housed in the `frontend/lectureme` directory. It provides a user-friendly interface for uploading lecture recordings and viewing the generated summaries.
 
-The backend is written in Python and is located in the `server` directory. It uses various libraries and APIs to process the uploaded videos. The `gemini.py` and `MainPointsAPI.py` scripts are responsible for identifying and extracting key points from the lecture transcripts. The `VideoCutter.py` script then uses these key points to cut the original video into smaller, digestible clips.
+The backend is written in Python and is located in the `server` directory. It uses various libraries and APIs to process the uploaded videos. The `MainPointsAPI.py` scripts are responsible for identifying and extracting key points from the lecture transcripts. The `VideoCutter.py` script then uses these key points to cut the original video into smaller, digestible clips.
 
 The entire application is orchestrated using Node.js, as specified in the `package.json` files in both the frontend and backend directories. This setup allows for seamless integration between the frontend and backend, making LectureMe a cohesive and efficient tool for lecture summarization.
 
