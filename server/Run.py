@@ -17,7 +17,9 @@ def get_clipped_videos(youtube_link):
     mainPoints = MainPoints(transcript)
 
     '''Cuts up the video using the key points'''
-    trimmed_video = videoCutter(youtubeFile, mainPoints)
+    trimmed_video_paths = videoCutter(youtubeFile, mainPoints)
+
+    return trimmed_video_paths
     
 if __name__ == '__main__':
     main()
