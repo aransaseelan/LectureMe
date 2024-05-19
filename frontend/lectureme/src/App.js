@@ -8,6 +8,7 @@ function App() {
   const [hidden2, setHidden2] = useState(true);
   const [hidden3, setHidden3] = useState(true);
   const startRef = React.useRef();
+
   return (
     <div className="App">
       <header className="App-header">
