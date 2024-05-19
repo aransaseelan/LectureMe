@@ -3,7 +3,9 @@ from TranscriptAPI import videoTranscript
 from MainPointsAPI import MainPoints
 from VideoCutter import videoCutter
 '''Runner of the Python program.'''
-
+def main():
+    get_clipped_videos("https://www.youtube.com/watch?v=JGwWNGJdvx8")
+    
 def get_clipped_videos(youtube_link):
     # '''Goes to VideoFile which gets the youtube link from the user'''
     youtubeFile = get_link(youtube_link)
@@ -17,3 +19,5 @@ def get_clipped_videos(youtube_link):
     '''Cuts up the video using the key points'''
     trimmed_video = videoCutter(youtubeFile, mainPoints)
     
+if __name__ == '__main__':
+    main()
