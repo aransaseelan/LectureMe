@@ -1,6 +1,7 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
 
+# Uncomment below for testing purposes
 def main():
     videoTranscript('https://www.youtube.com/watch?v=HCOQmKTFzYY&t=51s')
 
@@ -10,6 +11,7 @@ def videoTranscript(youtube_link):
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
     print(transcript)
     # print(video_id)
+    return transcript
 
 def extract_video_id(url):
     # Regular expression pattern to match YouTube video IDs
@@ -25,5 +27,6 @@ def extract_video_id(url):
         # Handle error (e.g., raise an exception, return None, etc.)
         return None
 
+# Uncomment below for testing purposes
 if __name__ == '__main__':
     main()
