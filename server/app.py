@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from Run import get_clipped_videos
 
 app = Flask(__name__)
@@ -10,4 +10,4 @@ def hello_world():
 @app.route('/fetch_videos/<youtube_link>', methods=['GET'])
 def fetch_videos(youtube_link):
   clipped_videos = get_clipped_videos(youtube_link)
-  return clipped_videos
+  return jsonify(clipped_videos)
