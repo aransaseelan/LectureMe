@@ -9,3 +9,9 @@ def videoCutter(keyPoints, video):
         clips.append(clip)
         
     return clips
+
+def main():
+    videoCutter([(0, 10), (20, 30), (40, 50)], 'video.mp4')
+
+if __name__ == '__main__':
+    main()
