@@ -1,6 +1,11 @@
 import './App.css';
 import {Image} from 'react-native';
 import React, {useState} from 'react';
+import {TextField} from '@material-ui/core';
+import cloudinary from 'cloudinary-video-player';
+import "cloudinary-video-player/cld-video-player.min.css";
+import 'cloudinary-video-player/chapters';
+import 'cloudinary-video-player/playlist';
 
 
 function App() {
@@ -29,6 +34,14 @@ function App() {
           {hidden2 ? null: <h1 id="test2">transform them using<br />our AI algorithm...</h1>}
           {hidden3 ? null : <h1 id="test3">and get all the<br />important takeaways!</h1>}
           <div id="video-enter" ref={startRef}></div>
+          <TextField id="filled-basic" label="Filled" variant="filled" />
+          <video
+            id="demo-player"
+            controls
+            autoplay
+            class="cld-video-player">
+          </video>
+          
         </div>
       </header>
     </div>

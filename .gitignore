@@ -1,2 +1,4 @@
 venv
 .env
+frontend/lectureme/node_modules
+frontend/node_modules
