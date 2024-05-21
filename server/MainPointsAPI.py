@@ -1,5 +1,5 @@
 import os
-from openai import OpenAI
+# from openai import OpenAI
 from dotenv import load_dotenv, find_dotenv
 
 # Uncomment below for testing purposes
@@ -10,26 +10,26 @@ from dotenv import load_dotenv, find_dotenv
 def MainPoints(transcript):
     '''Determines the key points of the video transcript'''
     keyPoints = []
-    prompt = 'From the provided transcript data, choose the 7 most important values by context and return them in the format (start time, duration) as Python tuples. Do not include any other information other than the Python tuples.'
-    final_prompt = prompt + '\n\n' + str(transcript)
+    # prompt = 'From the provided transcript data, choose the 7 most important values by context and return them in the format (start time, duration) as Python tuples. Do not include any other information other than the Python tuples.'
+    # final_prompt = prompt + '\n\n' + str(transcript)
 
-    __ = load_dotenv(find_dotenv())
-    client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
-    model = "gpt-3.5-turbo"
-    temperature = 0.3
-    max_tokens = 250
-    completion = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "You are summarizer. Given the transcript data of a Youtube video, choose the 7 most important values by context and return them in the format (start time, duration) as Python tuples. Do not include any other information other than the Python tuples."},
-            {"role": "user", "content": final_prompt}
-        ],
-        temperature=temperature,
-        max_tokens=max_tokens,
-        )
-    prompt_result = completion.choices[0].message.content
+    # __ = load_dotenv(find_dotenv())
+    # client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+    # model = "gpt-3.5-turbo"
+    # temperature = 0.3
+    # max_tokens = 250
+    # completion = client.chat.completions.create(
+    #     model=model,
+    #     messages=[
+    #         {"role": "system", "content": "You are summarizer. Given the transcript data of a Youtube video, choose the 7 most important values by context and return them in the format (start time, duration) as Python tuples. Do not include any other information other than the Python tuples."},
+    #         {"role": "user", "content": final_prompt}
+    #     ],
+    #     temperature=temperature,
+    #     max_tokens=max_tokens,
+    #     )
+    # prompt_result = completion.choices[0].message.content
 
-    print(prompt_result)
+    # print(prompt_result)
     return keyPoints
 
 # Uncomment below for testing purposes

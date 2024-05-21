@@ -2,7 +2,10 @@ import './App.css';
 import {Image} from 'react-native';
 import React, {useState} from 'react';
 import TextField from '@material-ui/core/TextField';
+<<<<<<< Updated upstream
 import cloudinary from 'cloudinary-video-player';
+=======
+>>>>>>> Stashed changes
 import "cloudinary-video-player/cld-video-player.min.css";
 import 'cloudinary-video-player/chapters';
 import 'cloudinary-video-player/playlist';
@@ -13,6 +16,10 @@ function App() {
   const [hidden2, setHidden2] = useState(true);
   const [hidden3, setHidden3] = useState(true);
   const [hiddenClip, setHiddenClip] = useState(true);
+<<<<<<< Updated upstream
+=======
+  const [hiddenSupport, setHiddenSupport] = useState(true);
+>>>>>>> Stashed changes
   const startRef = React.useRef();
   const [inputValue, setInputValue] = useState('');
 
@@ -65,25 +72,71 @@ function App() {
         <div id="hero">
           <h1 id="hero-text">Learn <span id="gradient-text">smarter</span>. Use your time <span id="gradient-text">better</span>.<br />Get <span id="gradient-text">LectureMe</span>.</h1>
           <div id="glass-cover"></div>
+<<<<<<< Updated upstream
           <TextField id="new-text-field" label="Enter a YouTube link" variant="filled" style={{position: 'relative', top: '50vh'}}
             onKeyDown={(event) => {
               setHiddenClip(false);
             }} />
+=======
+          <TextField 
+            id="new-text-field" 
+            ref={startRef}
+            label="Enter a YouTube link" 
+            variant="filled" 
+            style={{position: 'relative', top: '50vh', backgroundColor: 'white', borderRadius: '10px', width: '50%'}} 
+            value={inputValue}
+            onChange={(event) => setInputValue(event.target.value)}
+            onKeyDown={(event) => {
+              
+              setTimeout(() => {
+                setHiddenClip(false);
+              }, 3000);
+
+              if (event.key === 'Enter') {
+                fetchVideos(inputValue);
+                event.preventDefault(); // Prevent form submission
+              }
+            }}
+          />
+>>>>>>> Stashed changes
           <Image source={require('./television.png')} id="tv-pic" onMouseEnter={() => setHidden(false)} onMouseLeave={() => setHidden(true)} />
           <Image source={require('./orb.png')} id="orb-pic" onMouseEnter={() => setHidden2(false)} onMouseLeave={() => setHidden2(true)} />
           <Image source={require('./gba.png')} id="gba-pic" onMouseEnter={() => setHidden3(false)} onMouseLeave={() => setHidden3(true)}/>
           {hidden ? null : <h1 id="test">take your long, <br /> boring videos...</h1>}
           {hidden2 ? null: <h1 id="test2">transform them using<br />our AI algorithm...</h1>}
           {hidden3 ? null : <h1 id="test3">and get all the<br />important takeaways!</h1>}
+<<<<<<< Updated upstream
           {hiddenClip ? null : <video src='./test-assets/Mind-bending new programming language for GPUs just dropped.mp4'></video>}
           <div id="video-enter" ref={startRef}></div>
           <p id="youtube-link">Enter a YouTube link:</p>
+=======
+          <div id="video-enter">
+            {hiddenClip ? null : <video src="/test-assets/video.mp4" controls id="main-video" onClick={(event) => {
+              setTimeout(() => {
+                setHiddenSupport(false);
+              }, 3000);
+            }}/>}
+          </div>
+          {hiddenSupport ? null : <video class="support-videos" src="/clipped/clip0.mp4" controls style={{position: 'relative', top: '-50vh', width: '50%', height: '50%'}}/>}
+          {hiddenSupport ? null : <video class="support-videos" src="/clipped/clip1.mp4" controls style={{position: 'relative', top: '-50vh', width: '50%', height: '50%'}}/>}
+          {hiddenSupport ? null : <video class="support-videos" src="/clipped/clip2.mp4" controls style={{position: 'relative', top: '-40vh', width: '50%', height: '50%'}}/>}
+          {hiddenSupport ? null : <video class="support-videos" src="/clipped/clip4.mp4" controls style={{position: 'relative', top: '-40vh', width: '50%', height: '50%'}}/>}
+>>>>>>> Stashed changes
           {/* <video
             id="demo-player"
             controls
             autoplay
             class="cld-video-player">
           </video> */}
+<<<<<<< Updated upstream
+=======
+
+
+          <script>
+
+          </script>
+
+>>>>>>> Stashed changes
         </div>
       </header>
     </div>
