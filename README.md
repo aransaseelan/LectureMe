@@ -72,3 +72,9 @@ The biggest challenge we ran into is project management and figuring out how to 
 5. Saving video conversions to history
 
 And more!
+
+## Team
+Kaven Rajakumar
+Janahan Sivaneswaran
+Aran Saseelan
+Suvethan Thirunavukkarasu
