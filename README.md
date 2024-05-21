@@ -2,7 +2,7 @@
 
 ![lectureMeLogo](https://github.com/aransaseelan/LectureMe/assets/117704718/ab1c3ddd-5ea6-4e10-863a-8edd9aa4fba0)
 
-https://github.com/aransaseelan/LectureMe/assets/117704718/9b9de410-8cb2-497c-ba7c-8f3c2114fd4e
+https://github.com/aransaseelan/LectureMe/assets/117704718/5e2211a1-c09e-44a9-abca-5874c205fdf5
 
 <!-- ![LectureMe Logo](logo.png) -->
 
