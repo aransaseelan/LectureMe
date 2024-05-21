@@ -74,7 +74,7 @@ The biggest challenge we ran into is project management and figuring out how to 
 And more!
 
 ## Team
-Kaven Rajakumar
-Janahan Sivaneswaran
-Aran Saseelan
-Suvethan Thirunavukkarasu
+- Kaven Rajakumar
+- Janahan Sivaneswaran
+- Aran Saseelan
+- Suvethan Thirunavukkarasu
