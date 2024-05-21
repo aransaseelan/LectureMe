@@ -1,6 +1,12 @@
-﻿# LectureMe
+# LectureMe
 
 ![lectureMeLogo](https://github.com/aransaseelan/LectureMe/assets/117704718/ab1c3ddd-5ea6-4e10-863a-8edd9aa4fba0)
+
+## Team
+- Kaven Rajakumar
+- Janahan Sivaneswaran
+- Aran Saseelan
+- Suvethan Thirunavukkarasu
 
 https://github.com/aransaseelan/LectureMe/assets/117704718/5e2211a1-c09e-44a9-abca-5874c205fdf5
 
@@ -72,9 +78,3 @@ The biggest challenge we ran into is project management and figuring out how to 
 5. Saving video conversions to history
 
 And more!
-
-## Team
-- Kaven Rajakumar
-- Janahan Sivaneswaran
-- Aran Saseelan
-- Suvethan Thirunavukkarasu
