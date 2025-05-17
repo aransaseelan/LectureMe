@@ -12,7 +12,7 @@ https://github.com/aransaseelan/LectureMe/assets/117704718/5e2211a1-c09e-44a9-ab
 
 <!-- ![LectureMe Logo](logo.png) -->
 
-LectureMe is a revolutionary tool that transforms lengthy lecture recordings into concise, engaging reels! It uses advanced AI algorithms to identify key points and condense hours of content into bite-sized, digestible formats!
+LectureMe is a revolutionary tool that transforms lengthy lecture recordings into concise, engaging reels! It uses advanced AI algorithms to identify key points and condense hours of content into a bite-sized, digestible format!
 
 ## Features
 
